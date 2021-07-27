@@ -1,157 +1,453 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="indexcss.css">
-    <title>Biodata Form</title>
-    <style>
-       
-    </style>
-  </head>
-  <body>
-      <!-- Actually we should not use br tag bcz it is not a good practice but in these 
-    i am using br to make code simple -->
-    <h1>My Bio Data</h1>
-    <div class="biodata">
-    <form>
-    <fieldset class="clr">
-      <legend>Personal Information</legend>
-      <label for="firstname">FirstName: </label>
-      <input type="text" name="Frstname" id="firstname" placeholder="First Name" required />
+    <title>PhoneBook</title>
 
-      <label for="lastname">LastName: </label>
-      <input type="text" name="Lstname" id="lastname" placeholder="Last Name" />
-      <br /><br />
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css" />
 
-      <label>Gender: </label>
+    <!-- Unicons Link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
 
-      <label for="male" id="mrgn"> Male: </label>
-      <input type="radio" name="gend" id="male" required />
+<body>
+    <!-- header -->
+    <header class="head">
+        <i class="uil uil-book"></i> PhoneBook
+        
+    </header>
 
-      <label for="female">Female: </label>
-      <input type="radio" name="gend" id="female" />
-
-      <label for="other">Others: </label>
-      <input type="radio" name="gend" id="other" />
-
-      <br />
-      <br />
-      <label for="birthday">Date of Birth: </label>
-      <input type="date" name="brth" id="birthday" />
-
-      <br /><br />
-      <label for="mail">E-Mail: </label>
-      <input type="email" name="mal"id="mail" placeholder="Enter Your Email" required/>
-      <br />
-      <br />
-      <label for="phone">Phone: </label>
-      <input type="tel" name="no" id="phone" placeholder="+91" maxlength="10" />
-      <br /><br />
-      <label for="height">Height: </label>
-      <input type="text" name="hgt" id="height" placeholder="Height in feet" />
-    </fieldset>
-<br>
-    <fieldset class="clr">
-        <legend>Education</legend>
-
-        <label for="sch">School Name: </label>
-        <input type="text" name="school" id="sch" placeholder="School Name"/>
-<br><br>
-        <label for="cls">Class: </label>
-        <input type="text" name="class" id="cls" placeholder="Enter Class"/>
-<br><br>
-        <label for="str">Stream: </label>
-        <select name="stream" id="str" >
-            <option value="cse">Cse</option>
-            <option value="ee">EE</option>
-            <option value="me">ME</option>
-        </select>
-<br><br>
-        <label for="mrks">Marksheet: </label>
-        <input type="file" name="sheet" id="mrks" />
-
-    </fieldset>
-<br>
-<button type="submit" >Submit</button>
-</form>
-</div>
-<hr>
-<h1 >Time Table</h1>
+    <!-- container -->
     <div class="container">
+        <!-- Contact List of A -->
+        <div class="box">
+            <div class="contacts">A</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Andrew
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
 
-        <table cellspacing="5px">
-            <tbody>
-            <tr>
-                <th>Days/Periods</th>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td></td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <th>Mon</th>
-                <td>Science</td>
-                <td>English</td>
-                <td>Hindi</td>
-                <td rowspan="6">Break</td>
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
-            <tr>
-                <th>Tue</th>
-                <td>Science</td>
-                <td>English</td>
-                <td>Hindi</td>
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
-            <tr>
-                <th>Wed</th>
-                <td>Science</td>
-                <td>English</td>
-                <td rowspan="3">Hindi</td>
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
-            <tr>
-                <th>Thu</th>
-                <td>Science</td>
-                <td>English</td>
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
-            <tr class="tp">
-                <th >Fri</th>
-                <td>Science</td>
-                <td>English</td>
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
-            <tr>
-                <th>Sat</th>
-                <td>Science</td>
-                <td>English</td>
-                <td>Hindi</td>
-                <td>Maths</td>
-                <td>Games</td>
-                <td>Moral Science</td>
-            </tr>
-            <tr>
-                <td colspan="8" style="text-align: center;">This is class VIII</td>
-            </tr>
-        </tbody>
-        </table>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Annie
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Apparat
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Arcade
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Aziz
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact List of B -->
+        <div class="box">
+            <div class="contacts">B</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Ben
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Bella
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Bethany
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Bolt
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Brooke
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact List of C -->
+        <div class="box">
+            <div class="contacts">C</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Callie
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Catalina
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Chase
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Clara
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Calabash
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact List of D -->
+        <div class="box">
+            <div class="contacts">D</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Daisy
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Danny
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Daniel
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Daniella
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>David
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact List of E -->
+        <div class="box">
+            <div class="contacts">E</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Edward
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Ellie
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Ethan
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Emily
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Eva
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+       
+        <!-- Contact List of H -->
+        <div class="box">
+            <div class="contacts">H</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Harley
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Harry
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Harsh
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Henry
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Holly
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact List of I -->
+        <div class="box">
+            <div class="contacts">I</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Ibrahim
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Iris
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Isaac
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Isabelle
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Ivan
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact List of J -->
+        <div class="box">
+            <div class="contacts">J</div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-circle"></i>Jack
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>James
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Jamie
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Jessica
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-user-circle"></i>Johny
+                        <span class="contactNum">
+                            <i class="uil uil-phone"></i>Call
+                            <i class="uil uil-comment-alt-lines"></i>Message
+                            <i class="uil uil-whatsapp"></i>Whatsapp
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
